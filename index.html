@@ -1,0 +1,33 @@
+<html>
+ <head>
+<link rel="stylesheet" href="Calculator_design.css">
+</head>
+<body>
+<div id = "main">
+  <form name = "f">
+  <input type ="text" name = "field" placeholder="0" id="text_field"> <br>
+  <input type ="button" value ="1" onclick="f.field.value+=1">
+<input type ="button" value ="2" onclick="f.field.value+=2">
+<input type ="button" value ="3" onclick="f.field.value+=3">
+<input type ="button" value ="+" onclick="add()"><br>
+
+<input type ="button" value ="4" onclick="f.field.value+=4">
+<input type ="button" value ="5" onclick="f.field.value+=5">
+<input type ="button" value ="6" onclick="f.field.value+=6">
+<input type ="button" value ="-" onclick="sub()"><br>
+
+<input type ="button" value ="7" onclick="f.field.value+=7">
+<input type ="button" value ="8" onclick="f.field.value+=8">
+<input type ="button" value ="9" onclick="f.field.value+=9">
+<input type ="button" value ="/" onclick="div()"><br>
+
+<input type ="button" value ="c" onclick="f.field.value=' '">
+<input type ="button" value ="0" onclick="f.field.value+=0">
+<input type ="button" value ="=" onclick="f.field.value=eval(f.field.value)">
+<input type ="button" value ="x" onclick="mul()"><br>
+  
+  </form>
+</div>
+<script type="text/javascript" src="Calculator.js"></script>
+</body>
+</html>
